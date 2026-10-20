@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "Airbnb TTM Revenue Prediction: A Leak-Free ML Pipeline with Big Data Extensions"
+authors:
+  - family-names: "Tran"
+    given-names: "Thanh Mai"
+version: 1.0.0
+date-released: 2026-09-12
+license: MIT
+repository-code: "https://github.com/<your-username>/airbnb-revenue-prediction"
+keywords:
+  - machine-learning
+  - scikit-learn
+  - xgboost
+  - pyspark
+  - regression
+  - airbnb
+  - revenue-prediction

@@ -1,0 +1,38 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Data - large and/or licensed, never committed. data/sample/ holds a small
+# 3,000-row example so the pipeline can be tried without the full dataset.
+data/raw/*
+data/processed/*
+data/external/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+archive.zip
+
+# Trained model binaries: regenerate with train.py / benchmark.py.
+# The small *_metrics.json files next to them ARE committed.
+models/*.pkl
+!models/.gitkeep
+
+# NOTE: outputs/*.csv and reports/ (figures + tables) are committed on purpose -
+# they are the evidence for the numbers quoted in the README.
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
