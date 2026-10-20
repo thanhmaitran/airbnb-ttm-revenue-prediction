@@ -1,0 +1,17 @@
+{
+  "model": "random_forest",
+  "feature_set": "full",
+  "best_params": {
+    "regressor__max_depth": 10,
+    "regressor__min_samples_leaf": 2,
+    "regressor__n_estimators": 200
+  },
+  "test_metrics": {
+    "MAE": 962.954797496391,
+    "RMSE": 1866.3689863275351,
+    "R2": 0.990725037060923
+  },
+  "cv_mean": 0.9905074419037863,
+  "cv_std": 0.0004697010098250698,
+  "train_time_seconds": 430.02
+}

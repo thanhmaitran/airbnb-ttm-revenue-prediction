@@ -1,0 +1,17 @@
+{
+  "model": "hist_gb",
+  "feature_set": "full",
+  "best_params": {
+    "regressor__learning_rate": 0.1,
+    "regressor__max_iter": 300,
+    "regressor__max_leaf_nodes": 31
+  },
+  "test_metrics": {
+    "MAE": 905.9776149562475,
+    "RMSE": 1818.9823117134201,
+    "R2": 0.9913452885713461
+  },
+  "cv_mean": 0.9912770643380616,
+  "cv_std": 0.00035494992370719197,
+  "train_time_seconds": 66.61
+}

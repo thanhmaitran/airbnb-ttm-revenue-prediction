@@ -1,0 +1,15 @@
+{
+  "model": "ridge",
+  "feature_set": "no_performance",
+  "best_params": {
+    "regressor__alpha": 1.0
+  },
+  "test_metrics": {
+    "MAE": 8410.163946619421,
+    "RMSE": 26994.991513580328,
+    "R2": 0.4425507538850857
+  },
+  "cv_mean": 0.42779823630040265,
+  "cv_std": 0.0029838037121622794,
+  "train_time_seconds": 17.63
+}

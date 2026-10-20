@@ -1,0 +1,17 @@
+{
+  "model": "hist_gb",
+  "feature_set": "pre_booking",
+  "best_params": {
+    "regressor__learning_rate": 0.05,
+    "regressor__max_iter": 300,
+    "regressor__max_leaf_nodes": 63
+  },
+  "test_metrics": {
+    "MAE": 8871.97461455769,
+    "RMSE": 13803.182088828411,
+    "R2": 0.3635821142208656
+  },
+  "cv_mean": 0.3485061418108365,
+  "cv_std": 0.00478465710282113,
+  "train_time_seconds": 40.6
+}

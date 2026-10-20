@@ -1,0 +1,15 @@
+{
+  "model": "ridge",
+  "feature_set": "pre_booking",
+  "best_params": {
+    "regressor__alpha": 1.0
+  },
+  "test_metrics": {
+    "MAE": 9499.103086913923,
+    "RMSE": 26967.058159542426,
+    "R2": 0.29883206984154886
+  },
+  "cv_mean": 0.2882120008078049,
+  "cv_std": 0.0023949266275401994,
+  "train_time_seconds": 14.28
+}

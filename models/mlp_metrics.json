@@ -1,0 +1,21 @@
+{
+  "model": "mlp",
+  "feature_set": "full",
+  "best_params": {
+    "regressor__alpha": 0.001,
+    "regressor__hidden_layer_sizes": [
+      128,
+      64
+    ],
+    "regressor__learning_rate_init": 0.001,
+    "regressor__max_iter": 200
+  },
+  "test_metrics": {
+    "MAE": 1095.8044539799994,
+    "RMSE": 2217.485459696157,
+    "R2": 0.990186458398859
+  },
+  "cv_mean": 0.9898957021713424,
+  "cv_std": 0.0008736433760348342,
+  "train_time_seconds": 229.41
+}
