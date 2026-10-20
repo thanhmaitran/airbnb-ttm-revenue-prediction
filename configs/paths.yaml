@@ -1,0 +1,14 @@
+# Central path configuration — no hardcoded paths anywhere else in the codebase.
+raw_listings: "data/raw/listings.parquet"
+raw_past_rates: "data/raw/past_rates.parquet"
+processed_dataset: "data/processed/data_clean.parquet"
+sample_dataset: "data/sample/sample_listings.parquet"
+
+model_dir: "models"
+figure_dir: "reports/figures"
+table_dir: "reports/tables"
+output_dir: "outputs"
+metrics_file: "outputs/metrics.csv"
+predictions_file: "outputs/predictions.csv"
+feature_importance_file: "outputs/feature_importance.csv"
+cv_scores_file: "outputs/cv_scores.csv"

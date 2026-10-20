@@ -1,0 +1,79 @@
+seed: 42
+test_size: 0.2
+cv_folds: 5
+
+target: "ttm_revenue"
+log_transform_target: true
+
+outlier_filtering:
+  revenue_upper_quantile: 0.99
+  rate_upper_quantile: 0.99
+  occupancy_range: [0, 1]
+
+numeric_features:
+  - guests
+  - bedrooms
+  - beds
+  - baths
+  - min_nights
+  - num_reviews
+  - rating_overall
+  - photos_count
+  - ttm_avg_rate
+  - ttm_occupancy
+  - cleaning_fee
+  - extra_guest_fee
+  - superhost
+  - professional_management
+  - rating_avg
+  - rating_std
+  - bed_per_guest
+  - bath_per_guest
+  - log_avg_rate
+  - log_reviews
+  - log_cleaning
+  - cleaning_fee_ratio
+  - rate_x_reviews
+  - revpar_proxy
+  - size_x_rating
+  - price_vs_city_mean
+  - occ_vs_city_mean
+
+categorical_features:
+  - room_type
+  - country_grp
+
+top_n_countries: 10
+
+# Ablation feature sets (see `benchmark.py --feature-set`). Each lists the
+# features REMOVED from the full set:
+#   no_performance : drops realised price/occupancy (ttm_avg_rate, ttm_occupancy)
+#                    and everything derived from them
+#   pre_booking     : additionally drops reviews/ratings, which only exist
+#                    after a listing has had guests — i.e. what is knowable
+#                    for a brand-new listing (technical report, Section 7.1)
+ablations:
+  no_performance:
+    - ttm_avg_rate
+    - ttm_occupancy
+    - log_avg_rate
+    - rate_x_reviews
+    - revpar_proxy
+    - cleaning_fee_ratio
+    - price_vs_city_mean
+    - occ_vs_city_mean
+  pre_booking:
+    - ttm_avg_rate
+    - ttm_occupancy
+    - log_avg_rate
+    - rate_x_reviews
+    - revpar_proxy
+    - cleaning_fee_ratio
+    - price_vs_city_mean
+    - occ_vs_city_mean
+    - num_reviews
+    - log_reviews
+    - rating_overall
+    - rating_avg
+    - rating_std
+    - size_x_rating

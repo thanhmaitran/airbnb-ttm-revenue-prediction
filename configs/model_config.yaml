@@ -1,0 +1,43 @@
+# Hyperparameter grids. These are the grids that were actually executed in the
+# original coursework script (02_model_training.py); larger grids can be
+# dropped in here with no code change (see docs/modelling.md).
+ridge:
+  param_grid:
+    regressor__alpha: [0.1, 1.0, 10.0, 100.0, 500.0]
+  cv: 5
+
+random_forest:
+  param_grid:
+    regressor__n_estimators: [200]
+    regressor__max_depth: [10]
+    regressor__min_samples_leaf: [2]
+  cv: 3
+  n_jobs: -1
+
+xgboost:
+  param_grid:
+    regressor__n_estimators: [200, 300]
+    regressor__max_depth: [4, 6]
+    regressor__learning_rate: [0.05, 0.1]
+    regressor__subsample: [0.8]
+    regressor__colsample_bytree: [0.8]
+  cv: 3
+  device: "auto"   # "cuda" | "cpu" | "auto" (auto-detect, falls back to cpu)
+
+hist_gb:
+  param_grid:
+    regressor__learning_rate: [0.05, 0.1]
+    regressor__max_iter: [300]
+    regressor__max_leaf_nodes: [31, 63]
+  cv: 3
+
+mlp:
+  param_grid:
+    regressor__hidden_layer_sizes: [[128, 64]]
+    regressor__alpha: [0.001]
+    regressor__learning_rate_init: [0.001]
+    regressor__max_iter: [200]
+  cv: 3
+  early_stopping: true
+  validation_fraction: 0.1
+  n_iter_no_change: 20
