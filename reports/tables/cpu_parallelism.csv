@@ -1,0 +1,4 @@
+config,time_s,source
+n_jobs=1,14.6,"coursework run, 8-core machine"
+n_jobs=4,4.1,"coursework run, 8-core machine"
+n_jobs=-1 (all 8 cores),2.6,"coursework run, 8-core machine"

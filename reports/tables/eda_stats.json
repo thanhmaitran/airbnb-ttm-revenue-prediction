@@ -1,0 +1,58 @@
+{
+  "skew_raw": 2.0283562134693915,
+  "skew_log1p": -0.44373249653131097,
+  "corr_with_revenue": {
+    "ttm_occupancy": 0.644,
+    "ttm_avg_rate": 0.547,
+    "guests": 0.318,
+    "bedrooms": 0.347,
+    "beds": 0.275,
+    "baths": 0.326,
+    "num_reviews": 0.267,
+    "rating_overall": 0.191,
+    "cleaning_fee": 0.277,
+    "min_nights": -0.028
+  },
+  "validation": {
+    "n_rows": 92937,
+    "n_cols": 61,
+    "missing_values": {
+      "instant_book": 73915,
+      "bedrooms": 16718,
+      "guests": 10376,
+      "extra_guest_fee": 3241,
+      "rating_cleanliness": 2487,
+      "rating_communication": 2487,
+      "rating_overall": 2487,
+      "rating_accuracy": 2487,
+      "rating_checkin": 2487,
+      "rating_location": 2487,
+      "rating_value": 2487,
+      "cleaning_fee": 1967,
+      "min_nights": 1101,
+      "beds": 985,
+      "baths": 335
+    },
+    "revenue": {
+      "min": 108.0,
+      "max": 111108.0,
+      "mean": 16864.725781981342,
+      "median": 11647.0,
+      "std": 16756.58863155472
+    }
+  },
+  "country_median_revenue_top12": {
+    "Iceland": 25072.0,
+    "Ireland": 24221.0,
+    "Netherlands": 22241.0,
+    "United Kingdom": 18642.0,
+    "Portugal": 17688.0,
+    "Slovenia": 17654.0,
+    "Belgium": 16750.0,
+    "Malta": 15680.0,
+    "Denmark": 15522.0,
+    "Switzerland": 15494.0,
+    "Hungary": 14838.0,
+    "Spain": 14659.0
+  }
+}

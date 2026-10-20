@@ -1,0 +1,11 @@
+metric,value
+Raw listings,95898.0
+Raw columns,61.0
+Listings after cleaning,92937.0
+Countries,36.0
+Cities,373.0
+TTM revenue mean (USD),16865.0
+TTM revenue median (USD),11647.0
+TTM revenue std (USD),16757.0
+Mean occupancy,0.312
+Mean nightly rate (USD),145.18
